@@ -193,6 +193,7 @@
     <Compile Include="Forms\WriteToROM.Designer.cs">
       <DependentUpon>WriteToROM.cs</DependentUpon>
     </Compile>
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -224,6 +225,7 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="gba cart icon.ico" />
+    <Content Include="README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
