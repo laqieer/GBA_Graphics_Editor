@@ -444,6 +444,12 @@ namespace Nintenlord.GBA_Graphics_Editor
             {
                 PALfilePalette[i / 4] = Color.FromArgb(data[i], data[i + 1], data[i + 2]);
             }
+
+            // Enable the UsePALFile checkbox after loading a palette file
+            if (paletteForm != null && paletteForm.UsePALFile != null)
+            {
+                paletteForm.UsePALFile.Enabled = true;
+            }
         }
 
 
