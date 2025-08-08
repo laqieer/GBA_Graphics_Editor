@@ -214,7 +214,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown PalIndexUD;
         private System.Windows.Forms.CheckBox UseGrayScale;
-        private System.Windows.Forms.CheckBox UsePALFile;
+        public System.Windows.Forms.CheckBox UsePALFile;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton ColorMode16;
