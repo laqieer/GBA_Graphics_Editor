@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Nintenlord.GBA_Graphics_Editor</RootNamespace>
     <AssemblyName>GBA Graphics Editor</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ManifestCertificateThumbprint>E2F67F363BC76D4356D067BB9F780285F336CBFF</ManifestCertificateThumbprint>
     <ManifestKeyFile>unLZ-GBA replacement_TemporaryKey.pfx</ManifestKeyFile>
@@ -22,6 +22,8 @@
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <PublishUrl>C:\Users\Timo\Desktop\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -36,8 +38,6 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -51,6 +51,7 @@
     <OutputType>WinExe</OutputType>
     <AssemblyName>GBA Graphics Editor</AssemblyName>
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -64,23 +65,24 @@
     <AssemblyName>GBA Graphics Editor</AssemblyName>
     <DebugSymbols>True</DebugSymbols>
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GBA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\Dropbox\Unified FE Hacking\Nintenlord\Hacking\GBA\GBA\bin\Debug\GBA.dll</HintPath>
+      <HintPath>bin\Release\GBA.dll</HintPath>
     </Reference>
     <Reference Include="Nintenlord, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\Dropbox\Unified FE Hacking\Nintenlord\Nintenlord.Forms\bin\Debug\Nintenlord.dll</HintPath>
+      <HintPath>bin\Release\Nintenlord.dll</HintPath>
     </Reference>
-    <Reference Include="Nintenlord.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Nintenlord.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\Dropbox\Unified FE Hacking\Nintenlord\Nintenlord.Forms\bin\Debug\Nintenlord.Forms.dll</HintPath>
+      <HintPath>bin\Release\Nintenlord.Forms.dll</HintPath>
     </Reference>
     <Reference Include="ROMhacking, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\Dropbox\Unified FE Hacking\Nintenlord\Hacking\GBA\ROMhackingCore\bin\Debug\ROMhacking.dll</HintPath>
+      <HintPath>bin\Release\ROMhacking.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
